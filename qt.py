@@ -28,15 +28,6 @@ class Window(QMainWindow):
         self.head.setGeometry(20,10,600,70)
         self.head.setText("-Check terminal for progress if program not responding                               -A=row 0   B=row 1   ...\n-Case insensitive comparison used\n-Excel date are not processed correctly (converted to float)\n-Automatically copies the first line (header) in result file")
         self.head.setFont(QFont('Calibri', 8))
-        
-        #self.d = QCheckBox("Copy the first line in result file",self)
-        #self.d.setGeometry(20,440,200,100)
-        #self.d.clicked.connect(self.change)
-        #image = QImage("a.PNG")
-        #palette = QPalette()
-        #palette.setBrush(10,QBrush(image))     
-        #self.setPalette(palette)
-
 
         self.progress = QProgressBar(self)
         self.progress.setGeometry(10,80,580,20)
